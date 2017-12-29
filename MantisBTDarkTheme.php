@@ -1,9 +1,9 @@
 <?php
 
-class DarkThemePlugin extends MantisPlugin {
+class MantisBTDarkThemePlugin extends MantisPlugin {
 
   function register() {
-    $this->name        = 'Dark Theme';
+    $this->name        = 'MantisBT Dark Theme';
     $this->description = 'A dark theme for MantisBT.';
 
     $this->version     = '1.0';
@@ -16,9 +16,14 @@ class DarkThemePlugin extends MantisPlugin {
     $this->url         = 'http://www.tagirijus.de';
   }
 
-  function init() {
-    global $g_css_include_file;
-    $g_css_include_file = plugin_file('default.css');
+  function hooks() {
+    return array(
+        'EVENT_LAYOUT_RESOURCES' => 'add_css'
+    );
+  }
+
+  function add_css($p_event) {
+      echo '<link rel="stylesheet" type="text/css" href="' . plugin_file('DarkTheme.css') . '" />' . "\n";
   }
 
 }
