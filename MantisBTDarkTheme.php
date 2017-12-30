@@ -8,7 +8,7 @@ class MantisBTDarkThemePlugin extends MantisPlugin {
 
     $this->version     = '0.1';
     $this->requires    = array(
-      'MantisCore'       => '2.5.1',
+      'MantisCore'       => '2.0.0',
     );
 
     $this->author      = 'Manuel Senfft';
