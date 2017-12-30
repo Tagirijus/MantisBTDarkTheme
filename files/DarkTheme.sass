@@ -29,11 +29,17 @@ body
 	font-family: 'Open Sans' !important
 	background-color: $bg_a !important
 
+// a
+// 	color: $tagi !important
+
 
 // NAVI TOP
 
 .navbar
 	background-color: $bg_b !important
+
+.nav-tabs>li.active>a
+	border-top: 2px solid $tagi !important
 
 .nav-tabs
 	a
@@ -59,7 +65,7 @@ body
 		background-color: $tagi !important
 		color: $txt_b !important
 
-.btn-primary
+.btn.btn-white, .btn-primary, .btn.btn-white.btn-primary
 	background-color: $tagi !important
 	border-color: $tagi !important
 	color: $txt_a !important
@@ -71,7 +77,7 @@ body
 
 // MIDDLE CONTENT
 
-.main-content, .page-content, .main-container, .main-container:before, .main-container.container:before
+.main-content, .page-content, .main-container, .main-container:before, .main-container.container:before, .skin-3 .main-container:before
 	background: $bg_a !important
 	background-color: $bg_a !important
 
@@ -114,6 +120,13 @@ body
 .widget-box, .widget-main
 	background-color: $bg_c !important
 	border-color: $tagi !important
+
+.table
+	background-color: inherit !important
+
+.table-bordered
+	border-color: $bg_c !important
+	background-color: $bg_c !important
 
 .widget-body
 	background-color: $bg_c !important
@@ -188,7 +201,15 @@ select
 
 // SITE BAR
 
-.nav-list
+.skin-3 .sidebar
+	background-color: inherit !important
+	border-color: inherit !important
+
+.nav-list, .skin-3 .nav-list>li, .skin-3 .nav-list>li>a, .skin-3 .nav-list>li.active>a
+	background-color: inherit !important
+	border-color: $bg_c !important
+	&:hover
+		border-color: $bg_c !important
 	a:hover
 		background-color: $bg_c !important
 		border-color: $bg_c !important
@@ -198,6 +219,17 @@ select
 		color: rgba(0,0,0,0) !important
 		border-right-color: $tagi !important
 	&>li:before, &>li:after
+		background-color: $tagi !important
+
+.skin-3 .nav-list>li.open:before, .skin-3 .nav-list>li:hover:before
+	background-color: $tagi !important
+
+.skin-3 .sidebar.menu-min .nav-list>li>a>.menu-text
+	border-color: $bg_e !important
+
+.skin-3 .nav-list>li.active, .skin-3 .nav-list>li.active+li
+	border-color: $bg_c !important
+	&:before
 		background-color: $tagi !important
 
 .skin-3 .nav-list>li:hover+li
@@ -216,5 +248,40 @@ select
 	color: $tagi !important
 	background-color: $bg_a !important
 
-.sidebar-toggle
+.sidebar-toggle, .skin-3 .sidebar-toggle
+	background-color: inherit !important
+	border-color: $bg_c !important
 	color: $tagi !important
+	&>.ace-icon
+		background-color: $bg_b !important
+		border-color: $tagi !important
+		color: $tagi !important
+	&:before
+		border-color: inherit !important
+
+.well
+	background-color: $bg_g !important
+
+
+// bug list
+
+tr.spacer
+	background-color: $bg_b !important
+
+td.category, tr.bugnote .bugnote-note
+	background-color: $bg_d !important
+	color: white !important
+
+span.required
+	color: white !important
+
+// calendar
+
+.bootstrap-datetimepicker-widget
+	&, & *
+		background-color: $bg_b !important
+		color: white !important
+	td.day:hover, span.month:hover, span.year:hover
+		background-color: $bg_c !important
+	td.day.active, span.month.active, span.year.active
+		background-color: $bg_a !important
