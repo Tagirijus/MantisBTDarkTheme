@@ -13,3 +13,7 @@ Upload the whole folder into your `plugins/` folder in the mantis installation s
 ## Your colors
 
 I did not test it, but in theory you should even be able to *skin* it all with your own colors. The file `DarkTheme.sass` has some variables, which declare how the different shades look like. Mainly there are *tagi_*, *bg_* and *txt_* variables with different shades. *tagi_* is my corporate color, *bg_* variables are for the background colors and *txt_* variables are for text colors. Just test to chose your own color shadings and it won't only be a dark theme anymore! Oh, don't forget to compile the SASS into CSS after you changed the color-variables.
+
+## Changelog
+
+You can view the changelog [here: CHANGELOG.md](CHANGELOG.md).
