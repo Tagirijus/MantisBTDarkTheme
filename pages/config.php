@@ -1,5 +1,14 @@
 <?php
 
+$g_dark_theme_options = [
+    'tagi_default' => 'Tagi (default)',
+    'tagi_darker' => 'Tagi (darker)',
+    'orange' => 'Orange',
+    'ocean' => 'Ocean'
+];
+
+
+
 auth_reauthenticate( );
 access_ensure_global_level( config_get( 'manage_plugin_threshold' ) );
 
@@ -45,12 +54,8 @@ print_manage_menu( 'manage_plugin_page.php' );
 
 		<select name="dark_theme_option">
 			<?php
-				$dark_theme_options = [
-					'tagi_default' => 'Tagi (default)',
-					'ocean' => 'Ocean'
-				];
 
-				foreach ($dark_theme_options as $key => $value) {
+				foreach ($g_dark_theme_options as $key => $value) {
 					$option_selected = plugin_config_get( 'dark_theme_option' );
 					if ($option_selected == $key) {
 						$checked = ' selected';
@@ -60,7 +65,7 @@ print_manage_menu( 'manage_plugin_page.php' );
 
 					echo (
 						'<option value="' . $key . '"' . $checked
-						. '>' . $dark_theme_options[$key] . '</option>;'
+						. '>' . $g_dark_theme_options[$key] . '</option>;'
 					);
 				}
 			?>

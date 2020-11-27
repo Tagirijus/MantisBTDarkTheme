@@ -1,0 +1,300 @@
+$tagi: #7272ab
+$tagi_hl: #8686ce
+$tagi_brighter: #babaff
+
+$head_a: #5f5f70
+
+$bg_a: rgb(25,25,25)
+$bg_b: rgb(35,35,35)
+$bg_c: rgb(45,45,45)
+$bg_d: rgb(55,55,55)
+$bg_e: rgb(65,65,65)
+$bg_f: rgb(75,75,75)
+$bg_g: rgb(85,85,85)
+
+$bg_hl: #5f5f79
+
+$txt_a: rgb(255,255,255)
+$txt_b: rgb(240,240,240)
+$txt_c: rgb(230,230,230)
+$txt_d: rgb(220,220,220)
+$txt_e: rgb(210,210,210)
+$txt_f: rgb(190,190,190)
+$txt_g: rgb(8,8,8)
+
+html
+	background-color: $bg_a !important
+
+body
+	font-family: 'Open Sans' !important
+	background-color: $bg_a !important
+
+// a
+// 	color: $tagi !important
+
+
+// NAVI TOP
+
+.navbar
+	background-color: $bg_b !important
+
+.nav-tabs>li.active>a
+	border-top: 2px solid $tagi !important
+
+.nav-tabs
+	a
+		background-color: $bg_g !important
+		color: $txt_c !important
+		&:hover
+			background-color: $bg_e !important
+			color: $txt_a !important
+
+.dropdown-toggle
+	background-color: $bg_e !important
+	&:hover
+		background-color: $bg_d !important
+
+.dropdown-menu
+	background-color: $bg_c !important
+	a
+		color: $txt_c !important
+	.search
+		background-color: $bg_c !important
+		color: $txt_c !important
+	li.active:hover>a, li.active>a, li:hover>a, li>a:active, li>a:focus
+		background-color: $tagi !important
+		color: $txt_b !important
+
+.btn.btn-white, .btn-primary, .btn.btn-white.btn-primary
+	background-color: $tagi !important
+	border-color: $tagi !important
+	color: $txt_a !important
+	&:hover
+		background-color: $tagi_hl !important
+		border-color: $tagi_hl !important
+
+
+
+// MIDDLE CONTENT
+
+.main-content, .page-content, .main-container, .main-container:before, .main-container.container:before, .skin-3 .main-container:before
+	background: $bg_a !important
+	background-color: $bg_a !important
+
+.footer-content
+	background-color: $bg_a !important
+	border-top-color: $tagi !important
+	border-top-style: dotted !important
+	border-top-width: 1px !important
+
+.label
+	background-color: $tagi !important
+	&:before
+		border-right-color: $tagi !important
+	&.arrowed-in-right:after
+		border-color: $tagi !important
+		border-right-color: transparent !important
+
+.breadcrumbs
+	background-color: $bg_b !important
+	a
+		color: $tagi !important
+	.nav-recent
+		color: $txt_f !important
+	.nav-search-input
+		background-color: $bg_d !important
+		border-color: $tagi !important
+		color: $txt_b !important
+	.nav-search-icon
+		color: $tagi !important
+
+.widget-header
+	background-color: $head_a !important
+	border-color: $head_a !important
+	.white:hover
+		color: $txt_f !important
+	.badge
+		background-color: $bg_g !important
+
+
+.widget-box, .widget-main
+	background-color: $bg_c !important
+	border-color: $tagi !important
+
+.table
+	background-color: inherit !important
+
+.table-bordered
+	border-color: $bg_c !important
+	background-color: $bg_c !important
+
+.widget-body
+	background-color: $bg_c !important
+	color: $txt_e !important
+	.table
+		a
+			color: $tagi_hl !important
+		a.tagi-brighter
+			color: $tagi_brighter !important
+			font-weight: bold
+		a.btn
+			color: $txt_a !important
+		th
+			background-color: $bg_e !important
+			border-color: $bg_c !important
+			&
+				color: $txt_c !important
+		td
+			border-color: $bg_c !important
+		thead
+			background-color: $bg_e !important
+			tr
+				background-color: inherit !important
+				td
+					background-color: $bg_e !important
+					color: $txt_c !important
+	.fa-pencil
+		color: $txt_e !important
+	.table-responsive
+		background-color: $bg_c !important
+		color: $txt_a !important
+	.table-striped>tbody>tr:nth-of-type(odd)
+		background-color: $bg_d !important
+		&:hover
+			background-color: $bg_e !important
+	.table-striped>tbody>tr
+		background-color: $bg_c !important
+		&:hover
+			background-color: $bg_e !important
+	.profile-activity
+		border-color: $tagi !important
+		&:hover
+			background-color: $bg_e !important
+
+.widget-toolbox
+	background-color: $head_a !important
+	border-color: $head_a !important
+
+.table-hover>tbody>tr:hover
+	background-color: $bg_e !important
+
+
+.btn-toolbar
+	background-color: $tagi !important
+
+
+.form-inline
+	.input-sm
+		background-color: $bg_b !important
+		border-color: $bg_c !important
+		color: $txt_a !important
+
+.form-control, .input-sm, input
+	background-color: $bg_b !important
+	border-color: $bg_c !important
+	color: $txt_a !important
+
+select
+	background-color: $bg_e !important
+	color: $txt_c !important
+
+
+// SITE BAR
+
+.skin-3 .sidebar
+	background-color: inherit !important
+	border-color: inherit !important
+
+.nav-list, .skin-3 .nav-list>li, .skin-3 .nav-list>li>a, .skin-3 .nav-list>li.active>a
+	background-color: inherit !important
+	border-color: $bg_c !important
+	&:hover
+		border-color: $bg_c !important
+	a:hover
+		background-color: $bg_c !important
+		border-color: $bg_c !important
+		span
+			background-color: $bg_c !important
+	li.active>a:before
+		color: rgba(0,0,0,0) !important
+		border-right-color: $tagi !important
+	&>li:before, &>li:after
+		background-color: $tagi !important
+
+.skin-3 .nav-list>li.open:before, .skin-3 .nav-list>li:hover:before
+	background-color: $tagi !important
+
+.skin-3 .sidebar.menu-min .nav-list>li>a>.menu-text
+	border-color: $bg_e !important
+
+.skin-3 .nav-list>li.active, .skin-3 .nav-list>li.active+li
+	border-color: $bg_c !important
+	&:before
+		background-color: $tagi !important
+
+.skin-3 .nav-list>li:hover+li
+	border-top-color: rgba(0,0,0,0) !important
+
+.menu-icon
+	color: $tagi !important
+
+.arrow
+	z-index: -1
+	background-color: none !important
+	&::after
+		border-right-color: $tagi !important
+
+.menu-text
+	color: $tagi !important
+	background-color: $bg_a !important
+
+.sidebar-toggle, .skin-3 .sidebar-toggle
+	background-color: inherit !important
+	border-color: $bg_c !important
+	color: $tagi !important
+	&>.ace-icon
+		background-color: $bg_b !important
+		border-color: $tagi !important
+		color: $tagi !important
+	&:before
+		border-color: inherit !important
+
+.well
+	background-color: $bg_g !important
+
+
+// bug list
+
+tr.spacer
+	background-color: $bg_b !important
+
+td.category, tr.bugnote .bugnote-note
+	background-color: $bg_d !important
+	color: white !important
+
+td.bug-summary
+	font-weight: bold
+	font-size: 1.5em
+	// box-shadow: 0px 0px 10px 1px
+
+td.bug-description
+	font-weight: bold
+	font-size: 1.5em
+	// box-shadow: 0px 0px 10px 1px
+
+td.bug-tags, label.inline.small
+	color: grey
+
+span.required
+	color: white !important
+
+// calendar
+
+.bootstrap-datetimepicker-widget
+	&, & *
+		background-color: $bg_b !important
+		color: white !important
+	td.day:hover, span.month:hover, span.year:hover
+		background-color: $bg_c !important
+	td.day.active, span.month.active, span.year.active
+		background-color: $bg_a !important
