@@ -7,6 +7,9 @@ The format of the changelog is based on [Keep a Changelog](https://keepachangelo
 - Plugin now allows style selection.
 - Added three more styles (one thanks to "Richard" --> `Ocean`).
 
+### Fixed
+- I did some really weird git mistakes ... so I just replaced my improved scriptfiles and stuff over the online repo, which I did not wanted to pull over my local files in fear of missing my changes ... so there might be some weird things in the latest commits now and in the log and tags an releases. Wow, I really should learn to use git in a better way! :D
+
 ## [1.0.1] - 2018-05-08
 ### Added
 - CHANGELOG.md.
