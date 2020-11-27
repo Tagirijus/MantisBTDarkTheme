@@ -1,0 +1,6 @@
+<?php
+
+$s_plugin_MantisBTDarkTheme_title = 'MantisBT Dark Theme';
+$s_plugin_MantisBTDarkTheme_description = 'Ein dunkles Theme mit verschiedenen Optionen für Mantis Bug Tracker.';
+
+$s_plugin_MantisBTDarkTheme_config_menu_option = 'Farb-Option';

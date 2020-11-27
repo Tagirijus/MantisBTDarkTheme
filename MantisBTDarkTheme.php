@@ -3,10 +3,11 @@
 class MantisBTDarkThemePlugin extends MantisPlugin {
 
   function register() {
-    $this->name        = 'MantisBT Dark Theme';
-    $this->description = 'A dark theme for MantisBT.';
+    $this->name        = plugin_lang_get( 'title' );
+    $this->description = plugin_lang_get( 'description' );
+    $this->page = 'config';
 
-    $this->version     = '1.0';
+    $this->version     = '1.1';
     $this->requires    = array(
       'MantisCore'       => '2.0.0',
     );
@@ -17,13 +18,21 @@ class MantisBTDarkThemePlugin extends MantisPlugin {
   }
 
   function hooks() {
+    $hooks = parent::hooks();
+
+    $hooks['EVENT_LAYOUT_RESOURCES'] = 'add_css';
+
+    return $hooks;
+  }
+
+  function config( ) {
     return array(
-        'EVENT_LAYOUT_RESOURCES' => 'add_css'
+      'dark_theme_option' => 'tagi_default',
     );
   }
 
   function add_css($p_event) {
-      echo '<link rel="stylesheet" type="text/css" href="' . plugin_file('DarkTheme.css') . '" />' . "\n";
+      echo '<link rel="stylesheet" type="text/css" href="' . plugin_file('dark_theme_' . plugin_config_get( 'dark_theme_option' ) . '.css') . '" />' . "\n";
   }
 
 }
