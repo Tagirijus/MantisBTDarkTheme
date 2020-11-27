@@ -6,7 +6,7 @@ class MantisBTDarkThemePlugin extends MantisPlugin {
     $this->name        = 'MantisBT Dark Theme';
     $this->description = 'A dark theme for MantisBT.';
 
-    $this->version     = '0.1';
+    $this->version     = '1.0';
     $this->requires    = array(
       'MantisCore'       => '2.0.0',
     );
