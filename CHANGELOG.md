@@ -2,6 +2,11 @@
 
 The format of the changelog is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and follows the [semantic versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - UNRELEASED
+### Fixed
+- Page navigation now is also better themed for all the delivered themes.
+
+
 ## [1.1.0] - 2020-11-27
 ### Added
 - Plugin now allows style selection.

@@ -80,6 +80,24 @@ body
 
 // MIDDLE CONTENT
 
+.pager>li.disabled>a, .pager>li.disabled>a:hover, .pagination>li.disabled>a, .pagination>li.disabled>a:hover
+	background-color: $bg_e
+	border-color: $head_a
+
+.pagination>li.active>a, .pagination>li.active>a:hover, .pagination>li.active>a:focus
+	background-color: $tagi
+	border-color: $head_a
+
+.pager>li>a, .pagination>li>a
+	background-color: $bg_d
+	border-color: $head_a
+	color: $txt_b
+
+.pager>li>a:hover, .pagination>li>a:hover
+	background-color: $tagi_hl
+	border-color: $head_a
+	color: $txt_b
+
 .main-content, .page-content, .main-container, .main-container:before, .main-container.container:before, .skin-3 .main-container:before
 	background: $bg_a !important
 	background-color: $bg_a !important
